@@ -1,9 +1,9 @@
 import httpx
 
-from core.config import ConfigApp
+from core.config import AppSettings
 
 
-def get_weather_forecast(config_app: ConfigApp, lat: float, lon: float) -> dict:
+def get_weather_forecast(config_app: AppSettings, lat: float, lon: float) -> dict:
     headers = {
         'X-Yandex-Weather-Key': config_app.api_key_yandex
     }

@@ -4,7 +4,7 @@ RUN pip install uv
 
 WORKDIR /opt
 
-COPY src/ ./
+COPY app/ ./
 COPY entrypoint.sh entrypoint.sh
 
 RUN chmod +x entrypoint.sh
